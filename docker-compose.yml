@@ -3,9 +3,9 @@ services:
   app:
     build: .
     ports:
-      - "3000:3000"
+      - "5000:5000"
     environment:
-      - DATABASE_URL=postgres://user:password@db:5432/myapp
+      - DATABASE_URL=postgres://postgres:4bmzpRYqZco5EhMd6D6pDfCIiACbM4VEJGtqIxMagtrmAXa0p7P0jDF8YwvJSnV7@m0sg0wcso4w0kgko4sw84ggw:5432/postgres
       - REDIS_URL=redis://redis:6379
       - NODE_ENV=production
     depends_on:
